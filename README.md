@@ -24,6 +24,10 @@ The final model uses a custom **VGG-style architecture** with **Global Average P
 | Ethnicity | Classification | Accuracy | **75.45%** |
 
 Later, the custom model was used to build a Streamlit application that predicts the three demographics.
+
+## View Full Training Notebook
+For full training details — including model code, metrics, plots, and experiments, see: **CNN_tf_keras.ipynb** (located in the repo root)
+
 ## Streamlit App Features
 - Upload an image and get face attribute predictions
 - Live webcam inference using Streamlit_WebRTC
