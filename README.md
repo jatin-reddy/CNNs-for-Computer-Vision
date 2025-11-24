@@ -11,6 +11,7 @@ The project explores multi-task learning, where a shared CNN backbone learns gen
   - Gender (Classification)
 - Transfer Learning Comparison: Benchmarked the custom model against a fine-tuned MobileNetV2.
 - **Streamlit Application** — Real-time face attribute prediction via image upload or live webcam.
+
 ***Dataset:*** https://www.kaggle.com/datasets/moritzm00/utkface-cropped
 
 ## Model Overview
@@ -31,7 +32,8 @@ Later, the custom model was used to build a Streamlit application that predicts 
 
 ### Installation
 Follow the steps below to launch the Face Analysis Streamlit application on your local machine.
- **Prerequisites**
+
+**Prerequisites**
 Make sure you have:
 - **Python 3.10**
 - **Git**
