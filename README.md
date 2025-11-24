@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ### 4. Launch the Application
 ``` bash
-streamlit run home.py
+streamlit run Home.py
 ```
 
 ## ⚠ Disclaimer
