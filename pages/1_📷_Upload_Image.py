@@ -121,7 +121,7 @@ def get_results(face_img, model):
 st.write('Upload image to get your facial analysis')
 
 col1, col2 = st.columns([2, 1])
-final_stats = None
+stats = None
 
 # Image Upload
 with col1:
