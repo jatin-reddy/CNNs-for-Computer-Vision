@@ -23,6 +23,7 @@ The final model uses a custom **VGG-style architecture** with **Global Average P
 | Gender | Classification | Accuracy | **90.11%** |
 | Ethnicity | Classification | Accuracy | **75.45%** |
 
+[Download model.keras from Google Drive](https://drive.google.com/file/d/10LEEUDaQ7l-2tM07Zz7bKTRaI2BnWt4w/view?usp=sharing)
 Later, the custom model was used to build a Streamlit application that predicts the three demographics.
 
 ## View Full Training Notebook
@@ -71,8 +72,11 @@ venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+### 4. Connect the app to the model
+[Download model.keras from Google Drive](https://drive.google.com/file/d/10LEEUDaQ7l-2tM07Zz7bKTRaI2BnWt4w/view?usp=sharing)
+And then use the correct path in load_path() function on each page
 
-### 4. Launch the Application
+### 5. Launch the Application
 ``` bash
 streamlit run Home.py
 ```
