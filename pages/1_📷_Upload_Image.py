@@ -8,12 +8,10 @@ st.set_page_config(page_title="Facial Analysis - Ethnicity, Gender, Age", page_i
         'About': "Use your Webcam to get a prediction of your race, gender and age according to my CNN Model"
     })
 
-st.title("Face analysis using upload image")
+st.title("Face analysis on Images")
 st.sidebar.success("Select an option above")
 st.sidebar.info(
-    "⚠️ Disclaimer: This model is for demonstration purposes only. "
-    "Predictions for ethnicity, gender, and age may not be accurate. "
-    "Results should not be used for any critical decisions."
+    "⚠️ Disclaimer: This model is for demonstration purposes only. Predictions for ethnicity, gender, and age may not be accurate.Results should not be used for any critical decisions."
 )
 
 # lazy load the models
@@ -165,16 +163,14 @@ with col1:
                 (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 1, 2)
                 cv2.rectangle(result_img, (x, y-40), (x+tw+10, y), (0, 255, 0), -1)
                 cv2.putText(result_img, label, (x+5, y-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)                
-                st.image(result_img, caption="image analysis result", use_container_width=True)
+                st.image(result_img, caption="Result", width=400)
 
 # Sidebar
 with col2:
         st.markdown("### Face Analysis Result")
         
         if stats:
-            st.success(f"**{stats['ethnicity']}, {stats['gender']}, {stats['age']}**")
-            st.write("---")
-            
+            st.success(f"**{stats['ethnicity']}, {stats['gender']}, {stats['age']}**")            
             labels = ['White', 'Black', 'Asian', 'Indian', 'Others']
             for i, label in enumerate(labels):
                 val = float(stats['probs'][i])
